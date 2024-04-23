@@ -4,5 +4,5 @@ get("/dice/2/10", {:controller=> "twoten", :action => "twoten"})
 get("/dice/1/20", {:controller=> "onet", :action => "onet"})
 get("/dice/5/4", {:controller=> "fivef", :action => "fivef"})
 get("/", {:controller=> "homepage", :action => "homepage"})
-get("/dice/:number_of_dice/:number_of_sides", { :controller => "dice", :action => "sides"})
+get("/dice/:dice/:sides",{:controller=> "rand", :action => "rand"})
 end

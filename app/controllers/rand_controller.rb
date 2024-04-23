@@ -1,5 +1,5 @@
-class DiceController < ApplicationController
-  def sides
+class RandController < ApplicationController
+  def rand
     @num_dice = params.fetch("dice").to_i
 
     @sides = params.fetch("sides").to_i
